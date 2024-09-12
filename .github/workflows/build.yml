@@ -52,7 +52,7 @@ jobs:
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3
         with:
-          github-token: ${{ WS6 }}
+          github-token: ${{ secrets.WS6 }}
           output-file: "false"
 
       - name: Create Release
